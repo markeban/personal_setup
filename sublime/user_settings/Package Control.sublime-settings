@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"Elixir",
+		"Emmet",
+		"Git",
+		"Google Spell Check",
+		"Indent XML",
+		"IndentX",
+		"MarkdownPreview",
+		"Package Control",
+		"ReactJS",
+		"ScopeHunter",
+		"SingleTrailingNewLine",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
+		"SublimeLinter-rubocop",
+		"Terraform"
+	]
+}
