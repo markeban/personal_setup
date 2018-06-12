@@ -15,7 +15,7 @@ if [! -f ~/.bash_profile ]; then
 fi
 cat ./dot_files/bash_profile >> ~/.bash_profile
 
-# install spectacle and load config
+# load spectacle config file
 sudo cat ./spectacle_settings.json > ~/Library/Application Support/Spectacle/Shortcuts.json
 
 #install sublime text
