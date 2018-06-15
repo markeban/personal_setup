@@ -19,7 +19,7 @@ fi
 cat ./dot_files/bash_profile >> ~/.bash_profile
 
 # load spectacle config file
-sudo cat ./spectacle_settings.json > ~/Library/Application Support/Spectacle/Shortcuts.json
+sudo cp -Rf ./spectacle_settings.json > ~/Library/Application Support/Spectacle/Shortcuts.json
 
 #install sublime text
-cp -Rf ./sublime_settings/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+sudo cp -Rf ./sublime_settings/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
