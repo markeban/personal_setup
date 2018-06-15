@@ -4,7 +4,7 @@ set -e
 
 #install homebrew and bundle
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew bundle $PWD/Brewfile
+brew bundle
 brew bundle check
 
 # load iterm config
@@ -21,4 +21,4 @@ cat ./dot_files/bash_profile >> ~/.bash_profile
 sudo cat ./spectacle_settings.json > ~/Library/Application Support/Spectacle/Shortcuts.json
 
 #install sublime text
-source ./sublime/install_sublime_text.sh
+cp -Rf ./sublime_settings/ ~/Library/Application Support/Sublime Text 3/Packages/User
