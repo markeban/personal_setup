@@ -1,8 +1,10 @@
 #!/bin/sh
 
+set -e
+
 #install homebrew and bundle
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew bundle ./Brewfile
+brew bundle $PWD/Brewfile
 brew bundle check
 
 # load iterm config
