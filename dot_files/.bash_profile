@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ~/.bashrc
+
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 
@@ -43,3 +45,4 @@ export -f kill_all_rails
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
