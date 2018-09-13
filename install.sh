@@ -16,7 +16,7 @@ sudo defaults read com.googlecode.iterm2.plist
 source ./os_defaults.sh
 
 # symlink for bash_profile
-ln -s ~/personal_setup/.bash_profile ~/
+ln -s ~/personal_setup/dot_files/.bash_profile ~/
 
 # load spectacle config file
 sudo cp -Rf ./spectacle_settings.json > ~/Library/Application\ Support/Spectacle/Shortcuts.json
