@@ -70,6 +70,7 @@ plugins=(
   rake
   rbenv
   ruby
+  git-open
 )
 source $ZSH/oh-my-zsh.sh
 

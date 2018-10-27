@@ -29,5 +29,11 @@ sudo defaults read com.googlecode.iterm2.plist
 ### symlink for zsh
 `ln -s ~/personal_setup/dot_files/.zshrc ~/`
 
+### Set VSCode as default git editor
+`git config --global core.editor "code --wait"`
+
+### custom plugin for git-it-on (git open)
+`git clone https://github.com/peterhurford/git-it-on.zsh ~/.oh-my-zsh/custom/plugins/git-it-on`
+
 ### load spectacle config file
 `cp -Rf ./spectacle_settings.json > ~/Library/Application\ Support/Spectacle/Shortcuts.json`
