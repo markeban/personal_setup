@@ -29,6 +29,9 @@ sudo defaults read com.googlecode.iterm2.plist
 ### symlink for zsh
 `ln -s ~/personal_setup/dot_files/.zshrc ~/`
 
+### make zsh default
+`chsh -s $(which zsh)`
+
 ### Set VSCode as default git editor
 `git config --global core.editor "code --wait"`
 
