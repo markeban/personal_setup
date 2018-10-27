@@ -10,6 +10,9 @@ brew bundle
 brew bundle check
 ```
 
+### install oh-my-zsh
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+
 ### load iterm config
 ```
 sudo defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/personal_setup"
@@ -23,8 +26,8 @@ sudo defaults read com.googlecode.iterm2.plist
 ### symlink for bash_profile
 `ln -s ~/personal_setup/dot_files/.bash_profile ~/`
 
+### symlink for zsh
+`ln -s ~/personal_setup/dot_files/.zshrc ~/`
+
 ### load spectacle config file
 `cp -Rf ./spectacle_settings.json > ~/Library/Application\ Support/Spectacle/Shortcuts.json`
-
-### git completion
-`curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash`
