@@ -6,8 +6,8 @@ tap 'caskroom/versions'
 brew 'git'
 
 # editors
-cask 'intellij-idea-ce'
-cask 'sublime-text'
+# cask 'intellij-idea-ce'
+# cask 'sublime-text'
 cask 'visual-studio-code'
 
 # environment
@@ -16,12 +16,12 @@ brew 'zsh'
 
 # languages
 brew 'ruby'
-brew 'clojure'
+# brew 'clojure'
 brew 'elixir'
 brew 'go'
 brew 'erlang'
 brew 'python'
-cask 'java'
+# cask 'java'
 # brew 'rabbitmq'
 
 # language management/tools
@@ -41,7 +41,7 @@ cask 'spectacle'
 # apps
 cask 'caffeine'
 cask 'postico'
-cask '1password'
+# cask '1password'
 cask 'google-chrome' 
 cask 'firefox'
 # cask 'skitch'

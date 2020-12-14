@@ -5,7 +5,7 @@
 
 ### install homebrew and bundle
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew bundle
 brew bundle check
 ```
@@ -15,9 +15,11 @@ brew bundle check
 
 ### load iterm config
 ```
-sudo defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/personal_setup"
-sudo defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
-sudo defaults read com.googlecode.iterm2.plist
+# NOTE: This did not work. I had to update the file config path in iTerm2 UI (steps here: https://stackoverflow.com/a/23356086) - which copies over the existing, default config found in this folder - than manually paste over the old com.googlecode.iterm2.plist file. Then it worked.
+
+# sudo defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/personal_setup"
+# sudo defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+# sudo defaults read com.googlecode.iterm2.plist
 ```
 
 ### load os defaults
@@ -27,6 +29,7 @@ sudo defaults read com.googlecode.iterm2.plist
 `ln -s ~/personal_setup/dot_files/.bash_profile ~/`
 
 ### symlink for zsh
+# (You may need to remove the existing .zshrc file)
 `ln -s ~/personal_setup/dot_files/.zshrc ~/`
 
 ### make zsh default
