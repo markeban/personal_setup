@@ -2,8 +2,8 @@
 
 source ~/.bashrc
 
-eval "$(rbenv init -)"
-eval "$(nodenv init -)"
+# eval "$(rbenv init -)"
+# eval "$(nodenv init -)"
 
 # Rubocop
 # alias rc='bundle exec rubocop $PWD'
@@ -19,3 +19,7 @@ eval "$(nodenv init -)"
 # Go Lang
 # export GOPATH=$HOME/go
 # export PATH=$PATH:$GOPATH/bin
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash

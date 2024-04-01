@@ -1,3 +1,4 @@
+ZSH_DISABLE_COMPFIX="true"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -64,12 +65,9 @@ ZSH_THEME="kolo"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  bundler
   dotenv
-  osx
+  macos
   rake
-  rbenv
-  ruby
   git-open
 )
 source $ZSH/oh-my-zsh.sh
@@ -102,3 +100,26 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+gpgconf --launch gpg-agent
+eval "$(direnv hook zsh)"
+
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH=$PATH:~/.docker/bin
+export PATH="/usr/local/sbin:$PATH"
+
+export GEMFURY_TOKEN="5JQ6x-Mceq41ndubwCDBRYQgv8CRxRzo"
+
+
+
+alias release="~/citybase/.scripts/release.sh"
+
+alias kdev="kubectl --context=dev $1"
+alias kuat="kubectl --context=uat $1"
+alias kprod="kubectl --context=prod $1"
+
+alias rubocop_mod_only="git add -N .; git diff --name-only | xargs bundle exec rubocop"
+alias reset_all_ghenghis="bundle install && bundle exec rails db:drop && bundle exec rails db:create && bundle exec rails db:migrate && bundle exec rake seed:migrate"export PATH="/usr/local/sbin:$PATH"
