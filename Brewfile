@@ -1,6 +1,6 @@
 cask_args appdir: '/Applications'
 tap 'homebrew/cask'
-tap 'caskroom/versions'
+tap 'homebrew/cask-versions'
 
 # version control
 brew 'git'
@@ -13,6 +13,7 @@ cask 'visual-studio-code'
 # environment
 cask 'iterm2'
 brew 'zsh'
+brew 'git-open'
 
 # languages
 brew 'ruby'
